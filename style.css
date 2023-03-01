@@ -1,0 +1,133 @@
+html{
+    font-size: 100%;
+}
+
+body{
+    color: #24292e;
+    font-family: "Kokoro";
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 70px auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.site-title{
+    line-height: 1px;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.site-title a {
+    color: #24292e;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* header */
+#header {
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 4%;
+    height: 170px;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#header ul li {
+    font-size: 0.9rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#header ul li a {
+    color: #24292e;
+    transition: all 0.3s;
+}
+
+#header ul li a:hover{
+    opacity: 0.5;
+}
+
+/* sp */
+@media screen and (max-width: 1000px) {
+    /* header */
+    #header {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    #header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+/* about */
+#about ul {
+    margin-bottom: 30px;
+}
+
+#about ul li {
+    margin-bottom: 3px;
+}
+
+/* items */
+.lists-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-list {
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+.item-listsTitle {
+    font-size: 20px;
+}
+
+.price {
+    margin: 10px 30px;
+}
