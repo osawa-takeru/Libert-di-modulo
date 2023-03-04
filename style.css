@@ -4,7 +4,7 @@ html{
 
 body{
     color: #24292e;
-    font-family: "Kokoro";
+    font-family: "Sawarabi Gothic";
 }
 
 a{
@@ -12,7 +12,8 @@ a{
 }
 
 p{
-    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
 }
 
 img{
@@ -25,7 +26,7 @@ li{
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 96%;
     margin: 70px auto 130px auto;
     font-size: 0.9rem;
     padding: 0 4%;
@@ -81,23 +82,6 @@ li{
     opacity: 0.5;
 }
 
-/* sp */
-@media screen and (max-width: 1000px) {
-    /* header */
-    #header {
-        flex-direction: column;
-        height: auto;
-        width: auto;
-        line-height: 20px;
-        margin-top: 20px;
-    }
-
-    #header li {
-        font-size: 0.8rem;
-        margin-left: 20px;
-    }
-}
-
 #main {
     display: flex;
     justify-content: center;
@@ -119,15 +103,154 @@ li{
     justify-content: space-between;
 }
 
-.item-list {
-    max-width: 300px;
-    margin-bottom: 50px;
+
+.Item-lists {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.item-lists {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item-img {
+    max-width: 100%;
 }
 
 .item-listsTitle {
     font-size: 20px;
 }
 
-.price {
-    margin: 10px 30px;
+/* topics */
+#topics dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ffbc65;
+    margin-bottom: 20px;
+}
+
+#topics dt {
+    width: 20%;
+    border-bottom: 1px solid #ffbc65;
+    padding: 15px;
+}
+
+#topics dd {
+    width: 80%;
+    border-bottom: 1px solid #ffbc65;
+    padding: 15px;
+}
+
+/* contact */
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact dt {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+#contact dd {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+#contact dd input,
+#contact dd textarea {
+    width: 100%;
+    border: 1px solid #ffbc65;
+    padding: 10px;
+}
+
+#contact dd textarea {
+    height: 10rem;
+}
+
+#contact .button {
+    text-align: center;
+}
+
+#contact .button input {
+    border: 1px solid #888888;
+    background-color: #888888;
+    width: 200px;
+    padding: 15px 0;
+    color: #fff;
+}
+
+#contact .button input:hover {
+    background-color: #fff;
+    color: #888888;
+    transition: all 0.5s;
+}
+
+
+/* sp */
+@media screen and (max-width: 1000px) {
+    /* header */
+    #header {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    #header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+
+
+    /* about */
+    #about li {
+        font-size: 0.9rem;
+    }
+
+
+    /* items */
+    #items p {
+        font-size: 0.5rem;
+    }
+
+
+    /* topics */
+    #topics dl {
+        flex-direction: column;
+    }
+
+    #topics dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #topics dd {
+        width: 100%;
+    }
+
+
+    /* contact */
+    #contact dl {
+        flex-direction: column;
+    }
+    
+    #contact dt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #contact dd {
+        width: 100%;
+    }
+
 }
